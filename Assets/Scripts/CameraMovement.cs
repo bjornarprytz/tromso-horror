@@ -14,10 +14,14 @@ public class CameraMovement : MonoBehaviour
     [SerializeField]
     float lookingInDegrees = 5f;
 
+    [SerializeField]
+    GameObject sceneRail;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        if (sceneRail == null)
+            sceneRail = new GameObject();
     }
 
     // Update is called once per frame
